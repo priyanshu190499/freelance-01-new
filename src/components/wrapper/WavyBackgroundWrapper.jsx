@@ -5,7 +5,7 @@ import { WavyBackground } from "../main/WavyBackground";
 
 export default function WavyBackgroundDemo() {
   return (
-    <WavyBackground className="w-full   max-w-7xl mx-auto mt-48">
+    <WavyBackground className="w-full   max-w-7xl mx-auto ">
       <p className="text-2xl sm:text-3xl md:text-4xl lg:text-7xl text-white font-medium text-start">
         Make every second count
       </p>
@@ -26,7 +26,7 @@ export default function WavyBackgroundDemo() {
           <Partners marqueeData={partnersData} />
         </div>
       </div>
-      <div className=" h-[1px] w-full bg-gradient-to-r from-transparent via-neutral-300 to-transparent dark:via-neutral-700" />
+     
     </WavyBackground>
   );
 }

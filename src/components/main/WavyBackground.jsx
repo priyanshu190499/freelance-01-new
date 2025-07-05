@@ -111,7 +111,7 @@ export function WavyBackground({
   return (
     <div
       className={cn(
-        "h-screen flex flex-col  items-center justify-center",
+        "h-screen flex flex-col  items-center justify-end ",
         containerClassName
       )}
     >
@@ -122,7 +122,7 @@ export function WavyBackground({
         style={isSafari ? { filter: `blur(${blur}px)` } : {}}
       ></canvas>
 
-      <div className={cn("relative z-10 ", className)} {...props}>
+      <div className={cn("relative z-10 flex flex-col ", className)} {...props}>
         {children}
       </div>
     </div>

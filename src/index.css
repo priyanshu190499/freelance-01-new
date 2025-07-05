@@ -1,0 +1,98 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: rgb(0, 85, 254);
+  --color-secondary: rgb(10, 40, 102 );
+  --color-bl: rgba(225, 225, 225, 0.2);
+  
+}
+
+/* form */
+@theme inline {
+  --shadow-input:
+    0px 2px 3px -1px rgba(0, 0, 0, 0.1),
+    0px 1px 0px 0px rgba(25, 28, 33, 0.02),
+    0px 0px 0px 1px rgba(25, 28, 33, 0.08);
+}
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+.bg-1{
+ background: #000428;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #004e92, #000428);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, rgb(0, 85, 254), rgb(10, 40, 102 )); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.bshadow{
+    box-shadow:
+  0px 30px 40px -10px #0055ff80,
+  0px 0px 0px 1px rgba(0, 85, 255, 0.12);
+
+}
+
+/* Marquee in Partners Animation styling ----------------------------------*/
+  
+      .marquee-track {
+        animation: scroll-marquee 25s linear infinite;
+        min-width: 200%;
+        will-change: transform;
+      }
+
+      .group:hover .marquee-track {
+        animation-play-state: paused;
+      }
+
+      @keyframes scroll-marquee {
+        0% {
+          transform: translateX(0%);
+        }
+        100% {
+          transform: translateX(-50%);
+        }
+      }
+
+      /* Infinite scroll for testimonials ----------------------------------*/
+      @theme inline {
+  --animate-scroll: scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite;
+ 
+  @keyframes scroll {
+    to {
+      transform: translate(calc(-50% - 0.5rem));
+    }
+  }
+}
+
+/* Meteor effect ---------------------------------- */
+@theme inline {
+  --animate-meteor-effect: meteor 5s linear infinite;
+  
+  @keyframes meteor {
+    0% {
+      transform: rotate(215deg) translateX(0);
+      opacity: 1;
+    }
+    70% {
+      opacity: 1;
+    }
+    100% {
+      transform: rotate(215deg) translateX(-500px);
+      opacity: 0;
+    }
+  }
+}
+
+
+/* HTML: <div class="star"></div> */
+.star {
+  width: 30px; 
+  height: 30px; 
+  aspect-ratio: 1;
+  background:  rgb(0, 85, 254);
+  clip-path: polygon(50% 0,
+    calc(50%*(1 + sin(.4turn))) calc(50%*(1 - cos(.4turn))),
+    calc(50%*(1 - sin(.2turn))) calc(50%*(1 - cos(.2turn))),
+    calc(50%*(1 + sin(.2turn))) calc(50%*(1 - cos(.2turn))),
+    calc(50%*(1 - sin(.4turn))) calc(50%*(1 - cos(.4turn))) 
+   ); 
+ 
+}

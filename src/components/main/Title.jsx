@@ -15,4 +15,4 @@ const Title = ({t1,t2}) => {
   )
 }
 
-export default Title
+export default Title;

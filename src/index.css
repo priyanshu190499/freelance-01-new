@@ -96,3 +96,17 @@ background: linear-gradient(to right, rgb(0, 85, 254), rgb(10, 40, 102 )); /* W3
    ); 
  
 }
+
+
+/* Custom scrollbar */
+.scrollbar-thin::-webkit-scrollbar {
+  visibility: hidden;
+}
+
+.scrollbar-thin::-webkit-scrollbar-track {
+visibility: hidden;
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  visibility: hidden;
+}

@@ -111,7 +111,7 @@ export function WavyBackground({
   return (
     <div
       className={cn(
-        "h-screen md:h-[60vh] flex flex-col  items-center justify-end md:justify-center",
+        " md:h-[60vh] lg:h-[100vh] flex flex-col  items-center justify-end md:justify-center",
         containerClassName
       )}
     >

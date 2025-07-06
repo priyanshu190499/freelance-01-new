@@ -4,21 +4,20 @@ import InfiniteMovingCardsDemo from "../components/wrapper/InfiniteMovingCardsWr
 import PointerHighlightDemo from "../components/wrapper/PointerHighlightWrapper"
 import WavyBackgroundDemo from "../components/wrapper/WavyBackgroundWrapper"
 import GlowingEffectDemoSecond from "../components/wrapper/GlowingEffectWrapper"
-import MeteorsDemo from "../components/wrapper/MeteorCardWrapper"
 import StepperWithContent from "../components/main/Stepper"
 import StickyScrollRevealDemo from "../components/wrapper/StickyScrollWrapper"
 const Home = () => {
   return (
     <>
     <WavyBackgroundDemo/>
+    <GlowingEffectDemoSecond/>
+  <StepperWithContent/>
     <StickyScrollRevealDemo/>
   
-    {/* <GlowingEffectDemoSecond/>
     <InfiniteMovingCardsDemo/>
     <TimelineDemo/>
   <PointerHighlightDemo/>
   <ThreeDMarqueeDemo/>
-  <StepperWithContent/> */}
  
     </>
   )
